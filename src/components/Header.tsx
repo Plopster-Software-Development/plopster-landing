@@ -1,4 +1,4 @@
-import { brainwave } from "../assets";
+import { logo_plp } from "../assets";
 import { navigation } from "../constants";
 import { useLocation } from "react-router-dom";
 import Button from "./Button";
@@ -27,9 +27,9 @@ const Header = () => {
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4 p-[1em]">
         <a className="block w-[12-rem] xl:mr-8" href="#hero">
-          <img src={brainwave} width={190} height={40} alt="Brainwave" />
+          <img src={logo_plp} width={190} height={40} alt="Brainwave" />
         </a>
 
         <nav
@@ -42,7 +42,7 @@ const Header = () => {
             className="relative z-2 flex flex-col items-center 
           justify-center m-auto lg:flex-row"
           >
-            {navigation.map((item) => (
+            {/* {navigation.map((item) => (
               <a
                 key={item.id}
                 href={item.url}
@@ -57,27 +57,18 @@ const Header = () => {
               >
                 {item.title}
               </a>
-            ))}
+            ))} */}
           </div>
-          <HamburgerMenu />
+          {/* <HamburgerMenu /> */}
         </nav>
-        <a
-          href="#signup"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
-        >
-          New account
-        </a>
-        <Button className="hidden lg:flex" href="#login">
-          Sign in
-        </Button>
 
-        <Button
+        {/* <Button
           className="ml-auto lg:hidden"
           px="px-3"
           onClick={toggleNavigation}
         >
           <MenuSvg openNavigation={openNavigation} />
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

@@ -75,6 +75,24 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+import logo_plp from "./png/logo_plp.png";
+import spi from "./spi.png";
+import devTeam from "./dev_team.svg";
+import mail from "./mail-01.svg";
+import wiki from "./png/wiki.jpg";
+import isologo from "./png/isologo.png";
+import mockup from "./MockUp.webp";
+// import ig from "./instagram.svg";
+// import telegram from "./telegram.svg";
+
+// import ig from "./instagram.svg";
+
+// import ig from "./instagram.svg";
+
+// import ig from "./instagram.svg";
+
+// import ig from "./instagram.svg";
+
 export {
   brainwave,
   check,
@@ -144,4 +162,11 @@ export {
   instagram,
   telegram,
   twitter,
+  logo_plp,
+  devTeam,
+  spi,
+  mail,
+  wiki,
+  isologo,
+  mockup,
 };

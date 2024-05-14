@@ -4,7 +4,8 @@ const CompanyLogos = ({ className }: { className?: string }) => {
   return (
     <div className={`${className}`}>
       <h5 className="tagline mb-6 text-center text-n-1/50">
-        Helping people create beatiful content at
+        En Plopster, nos comprometemos a ser parte de tu progreso y éxito
+        empresarial
       </h5>
       <ul className="flex">
         {companyLogos.map((logo, index) => (
