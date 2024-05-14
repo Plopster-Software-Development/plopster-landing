@@ -27,8 +27,8 @@ const Projects = () => {
                   y1="0%"
                   y2="100%"
                 >
-                  <stop offset="0%" stop-color="#89F9E8"></stop>
-                  <stop offset="100%" stop-color="#FACB7B"></stop>
+                  <stop offset="0%" stopColor="#89F9E8"></stop>
+                  <stop offset="100%" stopColor="#FACB7B"></stop>
                 </linearGradient>
               </defs>
             </svg>
@@ -52,8 +52,8 @@ const Projects = () => {
                   y1="0%"
                   y2="100%"
                 >
-                  <stop offset="0%" stop-color="#9099FC"></stop>
-                  <stop offset="100%" stop-color="#D87CEE"></stop>
+                  <stop offset="0%" stopColor="#9099FC"></stop>
+                  <stop offset="100%" stopColor="#D87CEE"></stop>
                 </linearGradient>
               </defs>
             </svg>
