@@ -1,4 +1,4 @@
-import { logo_plp, mockup, wiki } from "../assets";
+import { mockup } from "../assets";
 import Section from "./section";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
