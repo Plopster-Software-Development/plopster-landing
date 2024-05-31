@@ -35,4 +35,4 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/plopster-land-img:latest
             docker stop plopster-land-container || true
             docker rm plopster-land-container || true
-            docker run -d --name plopster-land-container -p 8001:80 ${{ secrets.DOCKER_USERNAME }}/plopster-land-img:latest
+            docker run -d --name plopster-land-container -p 8001:80 -v /etc/nginx/sites-available/nicodav.conf:/etc/nginx/conf.d/nicodav.conf ${{ secrets.DOCKER_USERNAME }}/plopster-land-img:latest
