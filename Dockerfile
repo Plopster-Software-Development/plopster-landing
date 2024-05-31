@@ -23,7 +23,7 @@ FROM nginx:alpine
 COPY --from=build /app/build /usr/share/nginx/html
 
 # Copia tu archivo de configuración de nginx personalizado
-COPY nicodav.conf /etc/nginx/conf.d/default.conf
+COPY nicodav.conf /etc/nginx/conf.d/nicodav.conf
 
 # Expone el puerto
 EXPOSE 80
