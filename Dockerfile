@@ -22,8 +22,8 @@ FROM nginx:alpine
 # Copia el build generado en la etapa anterior a la ubicación de nginx
 COPY --from=build /app/build /usr/share/nginx/html
 
-# Copia el archivo de configuración de nginx
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Copia tu archivo de configuración de nginx personalizado
+COPY nicodav.conf /etc/nginx/conf.d/default.conf
 
 # Expone el puerto
 EXPOSE 80
