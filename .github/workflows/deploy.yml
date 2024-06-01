@@ -67,12 +67,12 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/plopster-land-img:latest
 
       - name: Deploy to VPS
-        uses: fifsky/ssh-action@master
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
-          user: ${{ secrets.VPS_USERNAME }}
-          pass: ${{ secrets.VPS_PASS_KEY }}
-          command: |
+          username: ${{ secrets.VPS_USERNAME }}
+          password: ${{ secrets.VPS_PASS_KEY }}
+          script: |
             docker pull ${{ secrets.DOCKER_USERNAME }}/plopster-land-img:latest
             docker stop plopster-land-container || true
             docker rm plopster-land-container || true
