@@ -70,10 +70,9 @@ jobs:
         uses: fifsky/ssh-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
-          port: 22
           user: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.VPS_SSH_KEY }}
-          script: |
+          command: |
             docker pull ${{ secrets.DOCKER_USERNAME }}/plopster-land-img:latest
             docker stop plopster-land-container || true
             docker rm plopster-land-container || true
