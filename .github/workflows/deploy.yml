@@ -71,7 +71,7 @@ jobs:
         with:
           host: ${{ secrets.VPS_HOST }}
           user: ${{ secrets.VPS_USERNAME }}
-          key: ${{ secrets.VPS_SSH_KEY }}
+          pass: ${{ secrets.VPS_SSH_KEY }}
           command: |
             docker pull ${{ secrets.DOCKER_USERNAME }}/plopster-land-img:latest
             docker stop plopster-land-container || true
