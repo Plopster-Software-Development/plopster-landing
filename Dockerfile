@@ -2,7 +2,7 @@ FROM nginx:latest
 
 RUN rm -rf /usr/share/nginx/html/*
 
-COPY /etc/nginx/sites-enabled/nicodav-nginx /etc/nginx/nginx.conf
+# COPY nicodav-nginx /etc/nginx/nginx.conf
 
 COPY ./dist /usr/share/nginx/html
 
