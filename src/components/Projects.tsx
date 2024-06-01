@@ -1,5 +1,6 @@
 import { mockup } from "../assets";
 import Section from "./section";
+// @ts-expect-error non maintained library
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 const Projects = () => {
