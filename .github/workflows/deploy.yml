@@ -53,7 +53,7 @@ jobs:
           path: dist/
 
       - name: Validate files
-        run: ls -l dist/super-app-forms/
+        run: ls -l dist/
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
