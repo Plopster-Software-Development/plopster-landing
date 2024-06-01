@@ -22,7 +22,7 @@ jobs:
 
       - name: Install npm
         run: |
-          npm install --production
+          npm install
 
       - name: Build app
         run: |
